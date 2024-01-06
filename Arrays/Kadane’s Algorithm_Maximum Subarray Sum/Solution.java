@@ -21,3 +21,32 @@
 // 	}
 
 // }
+
+// ____________________________________________________________________
+
+// Optimal Solution - O(N)
+
+// public class Solution {
+	
+// 	public static long maxSubarraySum(int[] arr, int n) {
+// 		long sum =0;
+// 		long maxSum= Integer.MIN_VALUE;
+
+// 		for(int i =0; i<n; i++){
+// 			sum += arr[i];
+
+// 			if(sum>maxSum){
+//                 maxSum=sum;
+//             }
+
+//             if(sum<0){
+//                  sum=0;
+//             }
+			
+// 		}
+        
+//         if(maxSum < 0) maxSum = 0; 
+// 		return maxSum;
+// 	}
+
+// }
