@@ -7,23 +7,19 @@ public class Solution {
 
         int curr_count = 0;
         int last_smaller = Integer.MIN_VALUE;
-        int max_count = 0;
+        int max_count = 1;
 
         for(int i =0; i<a.length; i++){
 
             if(a[i] == last_smaller+1){
                 curr_count++;
                 last_smaller = a[i];
-                max_count = Math.max(curr_count,max_count);
             }
-            else if(a[i] == last_smaller){
-                continue;
-            }
-            else{
+            else if(a[i] != last_smaller){
                 curr_count = 1;
-                max_count = Math.max(curr_count,max_count);
                 last_smaller = a[i];
             }
+            max_count = Math.max(curr_count,max_count);
         }
         return max_count;
     }
