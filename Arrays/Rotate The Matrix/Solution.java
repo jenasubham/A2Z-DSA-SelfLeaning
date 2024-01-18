@@ -13,7 +13,6 @@ public class Solution {
         }
 
         // reverse every row
-        int length = n/2; 
         for(int i=0; i<n;i++){
             int first = 0;
             int last = n-1;
