@@ -23,11 +23,13 @@ class Node {
 
 public class Solution
 {
-    public static int searchInLinkedList(Node head, int k)
-    {
+    public static int searchInLinkedList(Node head, int k){
+        // Write your code here
+        if(head == null){
+            return -1;
+        }
         Node ptr = head;
         while(ptr != null){
-            
             if(ptr.data == k){
                 return 1;
             }
